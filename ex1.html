@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="grid grid-cols-2 gap-4 p-4">
+    <div class="relative w-[200px] h-[200px] bg-gray-300">
+      <div class="absolute top-0 left-0 bg-orange-500 w-[50px] h-[50px]">child</div>
+    </div>
+    
+    <div class="relative w-[200px] h-[200px] bg-gray-300">
+      <div class="absolute bottom-0 left-0 bg-orange-500 w-[50px] h-[50px]">child</div>
+    </div>
+    
+    <div class="relative w-[200px] h-[200px] bg-gray-300">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-orange-500 w-[50px] h-[50px]">child</div>
+    </div>
+    
+    <div class="relative w-[200px] h-[200px] bg-gray-300">
+      <div class="absolute top-1/2 right-0 -translate-y-1/2 bg-orange-500 w-[50px] h-[50px]">child</div>
+    </div>
+  </div>
+  
+</body>
+</html>
