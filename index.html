@@ -3,12 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Counter App</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 100px auto;
+            width: 350px;
+            height:  450px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+        }
+        .counter-value {
+            font-size: 50px;
+            color: green;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .decrease { background-color: lightgray; }
+        .reset { background-color: white; border: 1px solid black; }
+        .increase { background-color: black; color: white; }
+    </style>
 </head>
 <body>
-    <input id="n1" type="number" />
-    <input id="n2" type="number" />
-    <button id="btn" onclick="btnClick(n1, n2)">Click me</button>
+
+    <div class="container">
+        <h1>Counter</h1>
+        <p class="counter-value">0</p>
+        <button class="decrease">DECREASE</button>
+        <button class="reset">RESET</button>
+        <button class="increase">INCREASE</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
